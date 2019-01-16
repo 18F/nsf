@@ -10,7 +10,7 @@ services:
   web:
     build: .docker
     ports:
-      - 8080:80
+      - 8080
     volumes:
       - .:/var/www/:delegated
     command: "/var/www/.docker/startup"
